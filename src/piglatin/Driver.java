@@ -9,18 +9,12 @@ import java.util.Scanner;
  */
 
 public class Driver {
+	//This will run the pig latin translator on the declaration of independence
+	//change the class from FileInput to ScannerInput to take input from keyboard. 
 
 	public static void main(String[] args) {
-		
-		Translator translator = new PigLatinTranslator();
-		Inputter inputter = new FileInput();
-		translator.translate(inputter.getInput("usdeclar.txt")); //change
-		
-		
-		
-		Inputter fileIn = new FileInput();
-		Translator translator2 = new WordCounter();
-		translator2.translate(fileIn.getInput("usdeclar.txt"));
+		Menu menu = new Menu();
+		menu.start();
 		
 	}
 	

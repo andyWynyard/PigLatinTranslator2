@@ -44,8 +44,7 @@ public class PigLatinTranslator implements Translator {
 			
 			finalString = finalString + string;
 		}
-		
-		System.out.println(finalString);
+
 		return finalString;
 		
 	}

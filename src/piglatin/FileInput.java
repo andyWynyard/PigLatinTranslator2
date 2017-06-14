@@ -7,11 +7,12 @@ import java.io.IOException;
 public class FileInput implements Inputter {
 
 	public FileInput() {
-		// TODO Auto-generated constructor stub
+
 	}
 
 	@Override
 	public String getInput(String fileName) {
+		//Take file input and concatenate onto a string to be passed to the translator and word counter
 		String temp = "";
 		try (BufferedReader bufIn = 
                 new BufferedReader(new FileReader(fileName))) {
@@ -25,7 +26,6 @@ public class FileInput implements Inputter {
             System.err.println(e);
         }
 		
-		//System.out.println(temp);
 		return temp;
 	}
 
